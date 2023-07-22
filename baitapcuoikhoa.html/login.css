@@ -1,6 +1,4 @@
-html{
-    height:100%;
-}
+
 body{
     margin:0;
     padding:0;
@@ -12,15 +10,12 @@ body{
     display: flex;
     justify-content: center; 
     flex-direction: column;
-    margin-top: 20%;
-    margin-bottom: 20%;
-    margin-right: 15%;
-    margin-left: 15%;
-    
+    align-items: center;
+    height:100vh;
 }
 #login-form{
     display: flex;
-    width: 30%;
+    width: 20%;
     flex-direction: column;
     gap:10px;
     box-shadow: 0 15px 25px rgba(0,0,0,.6);
@@ -63,10 +58,6 @@ input#password{
     border-radius: 7px;
 }
 div#hearder-button {
-    display: flex;
-    justify-content: center;
-}
-#header-form{
     display: flex;
     justify-content: center;
 }
