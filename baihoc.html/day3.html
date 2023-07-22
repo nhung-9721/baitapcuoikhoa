@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <script>
+    // localStorage.setItem("ten","nhung");
+    // localStorage.setItem("tuoi",20);
+    // //lưu dữ liệu vào local storage
+    // const name = localStorage.getItem("ten");
+    // console.log(name);
+    // const age = localStorage.getItem("tuoi");
+    // console.log(age);
+    // //lấy dữ liệu trong local storage
+    // localStorage.removeItem("tuoi");
+    // //xóa dữ liệu trong local storage
+    // localStorage.clear();
+    // // xóa toàn bộ dữ liêun trong local storage
+    // console.log(age+20);//40
+    // //thay đổi dữ liệu lấy ra local storage
+    // ageconverted = Number(age);
+    // console.log(ageconverted+20);
+    const arr =[1,2,3,4,5];
+    const obj ={
+        name: "nhung",
+        age: 20
+    };
+    localStorage.setItem("arr",JSON.stringify(arr));
+    localStorage.setItem("obj",JSON.stringify(obj));
+    const arrFromLS = JSON.parse(.getItem("arr"));
+    const objFromLS =  JSON.parse(.getItem("obj"));
+     //JSON.parse(arrFromLS) : chuyển chuỗi thành mảng
+     //JSON.parse(objFromLS) : chuyển chuỗi thành object 
+   console.log(arrFromLS);
+   console.log(objFromLS);
+   </script>
+</body>
+</html>

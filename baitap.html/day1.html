@@ -1,0 +1,83 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>day1</title>
+    <link rel="stylesheet" href="./day1.css">
+    
+
+</head>
+<body>
+    <div class="search-box">
+        <input  id=" input-ten" type="search" placeholder="mời nhập tên cần tìm ">
+        <p id="search-input"></p>
+    </div>
+    <script>
+        //bai 1
+        // 1
+        //111
+       //11111
+       //sử dụng vòng lặp để vẽ từng tầng 
+       let LEVEL = 3;
+       let spaces = LEVEL-1;// chứa số khoangr trắng ở đầu hàng 
+       let one =1;//chứa số lượng số 1 ở hàng đó 
+       let triangle ="";
+       for (let i=0; i<LEVEL;i++){
+        for(let j = 0;i<LEVEL-1;j++){
+           triangle = triangle + "";
+        }
+        for(let k=0;k< ones;k++){
+            triangle = triangle + "1";
+        }
+        spaces = spaces-1;
+        ones =one +2;
+        triangle =triangle +"\n"
+       }
+       //bài 2
+       const myArr = [0,1,2,3,4,5,6,7,8,9];
+       let filteredArr =[];
+       myArr.forEach(() =>{
+       if( item%2 ==0){
+        filteredArr.push(item);2
+       }
+       })
+       //bài 3:
+    //    const ans = prompt("Em ăn cơm chx");
+    //    console.log(ans);
+       //bài 4
+    //    const songlyrics = [
+    //     "những ngày ","ngày mưa gió","hay ngồi","Nhìn những đôi chim"
+    //    ];
+    //    setTimeout(() =>{
+    //     console.log(songLyrics[0]);
+    //    },1000);
+    //    setTimeout(() =>{
+    //     console.log(songLyrics[1]);
+    //    },2000);
+    //    setTimeout(() =>{
+    //     console.log(songLyrics[2]);
+    //    },3000);
+    //    setTimeout(() =>{
+    //     console.log(songLyrics[3]);
+    //    },4000);
+    //    songLyrics.forEach((item,index) => {
+    //     setTimeout(()=>{
+    //         console.log(item)
+    //     },1000*index);
+    //    });
+    //    let i =0;
+    //    setInterval(() =>{
+    //     if (i>= songLyrics.length){
+    //         clearInterval(x);
+    //     }
+    //     console.log(songlyrics[i]);
+    //     i = i+1;
+    //    })
+
+
+
+
+    </script>
+</body>
+</html>

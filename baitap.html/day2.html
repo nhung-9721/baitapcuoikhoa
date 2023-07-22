@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="./day2.css">
+</head>
+<body>
+    <div class="form-warper">
+        <form  action="" id="login">
+            <div id="form-name">
+                <h1> Login </h1>
+            </div>
+            <div id="form-text">
+                <input id="username" type="text" name="full-name" class="form-input" placeholder="Username">
+                <input id="Email"type="email" name="email" class="form-input" placeholder="Email Address">
+            </div>
+            <div id="form-button">
+              <button type="submit" id="action"onclick=""> LOGIN</button>
+            </div>
+        </form>
+    </div>
+    <div id="form-back">
+        <p> Not a member?</p>
+        <a  href="https://www.youtube.com/"> Create Account</a>
+    </div>
+<script>
+    const Usernames =document.getElementById("username");
+    const emails = document.getElementById("email");
+    const forEL =document.getElementById("login");
+    forEL.addEventListener("submit",function(e){
+        e.preventDefault()
+        const email=emails.value;
+    });
+
+</script>
+</body>
+</html>

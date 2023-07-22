@@ -1,0 +1,51 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+
+    <script>
+        const vietnam = "https://api.apify.com/v2/key-value-stores/ZsOpZgeg7dFS1rgfM/records/LATEST"
+        const tinhthanh ="https://api.apify.com/v2/key-value-stores/p3nS2Q9TUn6kUOriJ/records/LATEST"
+
+        // fetch(vietnam)
+        // .then((response) =>{
+        //     return response.json();
+
+        // })
+        // .then ((data)=>{
+        //     console.log(data)
+        //     data.detail.forEach((user) => {
+        //         document.body.insertAdjacentHTML(
+        //             "beforeend",
+        //             `<p>${user.name}/p>
+        //             <p>${user.death}</p>
+        //             <p>${user.treating}</p>
+        //             <p>${user.cases}</p>
+        //             <p>${user.recovered}</p>
+        //             <p>${user.casesTday}</p>`
+
+        //         );
+        //     });
+        // });
+        fetch(tinhthanh)
+        .then((response) =>{
+            return response.json();
+
+        })
+        .then((data)=>{
+            console.log(data)
+            data.key.forEach((cabenh)=>{
+                document.body.insertAdjacentHTML(
+                    "beforeend",
+                    `<p>${cabenh.name}</p>
+                    <p>${cabenh.hec-key}</p>`
+                )
+            })
+        })
+    </script>
+ 
+</html>

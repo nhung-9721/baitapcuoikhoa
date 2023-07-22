@@ -1,0 +1,55 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=>, initial-scale=1.0">
+    <title>Document</title>
+</head>
+
+<body>
+    <script>
+        //hàm fetch()
+        // cú pháp fetch(url,options);
+        const endPoint = "https://jsonplaceholder.typicode.com/users";
+        //get để lấy dữ liệu thfi ko cần options
+        fetch(endPoint).then((response) => {
+            //Dữ liệu trả về thường ở dạng JSON , nên ở đấy chúng ta cần phải chuyển về dạng object để có thể sử dụng
+            return response.json();
+        })
+            .then((data) => {
+                // console.log(data);
+                data.forEach((user) => {
+                    document.body.insertAdjacentHTML(
+                        "beforeend",
+                        `<p>${user.id}</p>`
+                    );
+                });
+            });
+        const postOptions = {
+            method: "POST",
+            header: {
+                "Content-type": "application/json",
+            },
+            body: JSON.stringify({
+                name: "Nhung",
+                email: "kotenn619@gmail.com",
+                phone: "0384900186",
+                username: "Nhung_2197",
+                website: "Nhung.com",
+            }),
+        };
+        fetch(endPoint, postOptions)
+            .then((response) => response.json())
+            .then((data) => {
+                if (data.id) {
+                    document.body.insertAdjacentHTML(
+                        "beforeend",
+                        `<p>${data.name}</p>`
+                    );
+                }
+            });
+    </script>
+</body>
+
+</html>

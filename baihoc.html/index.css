@@ -1,0 +1,96 @@
+/* input,
+button,
+textarea,
+select {
+    font: inherit;
+}
+
+/* Remove all animations, transitions and smooth scroll for people that prefer not to see them */
+/* @media (prefers-reduced-motion: reduce) {
+    html:focus-within {
+        scroll-behavior: auto;
+    }
+
+    *,
+    *::before,
+    *::after {
+        animation-duration: 0.01ms !important;
+        animation-iteration-count: 1 !important;
+        transition-duration: 0.01ms !important;
+        scroll-behavior: auto !important;
+    }
+}
+/* navbar */
+/* nav {
+    width:100%;
+    background-color: white;
+    box-shadow: 0 0 0.25rem 0 rgba(0, 0, 0, 0.08), 0 0.25rem 0.25rem 0 rgba(0, 0, 0, 0.08);
+    position:fixed;
+    top:0px;
+}
+.navbar-container{
+    height:4.75rem;
+    width:80%;
+    display:flex;
+    justify-content: space-between;
+    align-items: center;
+    margin-left:auto;
+    margin-right:auto;
+
+}
+.navbar-logo >img{
+    height: 2.5em;
+}
+.navbar-menu-lang {
+    display: flex;
+    align-items: center;
+    /* Thêm một chút khoảng cách giữa các item */
+    /* gap: 3rem;
+}
+.navbar-menu {
+    display: flex;
+    align-items: center;
+    /* Thêm một chút khoảng cách giữa các item */
+    /* gap: 1.25rem; */
+    /* Xóa bỏ dấu chấm ở đầu mỗi item trong danh sách */
+    /* list-style: none;
+}
+.navbar-menu-item a{
+    color: #313131;
+    transition: color 0.3s;
+}
+.navbar-menu-item a:hover {
+    color: #000000;
+}
+.navbar-lang{
+    display:flex;
+    align-items: center; */
+    /* gap:0.25rem;
+
+}
+.navbar-lang a {
+   color:#313131;
+   text-decoration-line: underline;
+}
+.navbar-lang a:hover{ */
+    /* color:#ff0000;
+    text-decoration-line: none;
+} */
+
+*{
+box-sizing:border-box;
+}
+body{
+    margin:0;
+}
+.search-wrapper{
+    margin :5rem auto auto 0;
+    width:50%;
+}
+.search-wrapper > input{
+    width:100%;
+    padding :0,5rem 1 rem;
+    border:1px soild #ccc;
+    border-radius: 0.5rem;
+    
+}

@@ -1,0 +1,22 @@
+#image{
+    height: 9rem;
+}
+input,
+button,
+textarea,
+select {
+    font: inherit;
+}
+#navbar-head{
+    height: 4.75rem;
+    display: flex;
+    /* Cần có thểm align-item: center để ảnh và menu cân bằng nhau theo chiều dọc của nav */
+    align-items: center;
+    justify-content: space-between;
+
+    /* Container chỉ chiếm 80% chiều ngang của nav thôi */
+    width: 80%;
+    /* Sử dụng combo margin left và right bằng auto để đưa container vào giữa nav */
+    margin-left: auto;
+    margin-right: auto;
+}
