@@ -8,14 +8,12 @@ body{
     margin: 0;
     padding: 0;
     overflow: hidden;
-    background-color: #333;
-    color: white;
-    display: flex;
-   
+    background-color:#333;
+    color:white;
 }
 
 #nabar-warrp>li {
-    float: left;
+    float:left;
 }
 
 #nabar-warrp>li>a {
@@ -32,6 +30,7 @@ body{
 #classes{
     display: flex;
     justify-content: space-around;
+    width:25%;
 }
 .header-icons{
     width:20px;

@@ -1,27 +1,30 @@
-
-body{
-    margin:0;
-    padding:0;
-    background:url(https://images.unsplash.com/photo-1551554781-c46200ea959d?ixlib=rb-1.2.1&ixid=eyJhcHBfaWQiOjEyMDd9&auto=format&fit=crop&w=1500&q=80);
+body {
+    margin: 0;
+    padding: 0;
+    /* background:url(https://images.unsplash.com/photo-1551554781-c46200ea959d?ixlib=rb-1.2.1&ixid=eyJhcHBfaWQiOjEyMDd9&auto=format&fit=crop&w=1500&q=80); */
     background-attachment: fixed;
     background-repeat: no-repeat;
 }
-#header{
+
+#header {
     display: flex;
-    justify-content: center; 
-    flex-direction: column;
-    align-items: center;
-    height:100vh;
+    /* flex-direction: column; */
+    /* align-items: center; */
+    justify-content: center;
+    margin-top: 8rem;
+    height: 100vh;
 }
-#login-form{
+
+#login-form {
     display: flex;
     width: 20%;
     flex-direction: column;
-    gap:10px;
-    box-shadow: 0 15px 25px rgba(0,0,0,.6);
+    gap: 10px;
+    box-shadow: 0 15px 25px rgba(0, 0, 0, .6);
     text-align: center;
-    padding:10px;
+    padding: 10px;
 }
+
 input#username {
     border-radius: 10px;
     height: 2rem;
@@ -35,20 +38,8 @@ input#username {
     outline: none;
     background: transparent;
 }
-input#password{
-    border-radius: 10px;
-    height: 2rem;
-    width: 100%;
-    padding: 10px 0;
-    font-size: 16px;
-    color: #fff;
-    margin-bottom: 30px;
-    border: none;
-    border-bottom: 1px solid #fff;
-    outline: none;
-    background: transparent;  
-}
-#button-log{
+
+#button-log {
     width: 30%;
     display: flex;
     justify-content: center;
@@ -57,11 +48,26 @@ input#password{
     align-items: center;
     border-radius: 7px;
 }
+
 div#hearder-button {
     display: flex;
     justify-content: center;
 }
-h1{
+
+h1 {
     display: flex;
     justify-content: center;
 }
+
+div#nabar-2 {
+    display: flex;
+    justify-content: space-between;
+}
+
+div#header {
+    width: 50rem;
+}
+
+/* form#login-form {
+    width: 20rem;
+} */

@@ -1,0 +1,336 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>[x-cloak]{display:none}</style>
+    <!-- Include the Alpine library on your page -->
+    <script src="https://unpkg.com/alpinejs" defer></script>
+    <!-- Include the TailwindCSS library on your page -->
+    <script src="https://cdn.tailwindcss.com"></script>
+    <link rel="stylesheet" href="./shop.css">
+</head>
+<body>
+    
+    <div>
+        <div class="nabar">
+        </div>
+        <!--thanh di chuyển đổi sang các loại đồ nam và nữ  -->
+        <div class="nabar-2">
+            <section class="w-full px-6 antialiased bg-white">
+                <div class="mx-auto max-w-7xl">
+                    <nav class="relative z-50 h-24 select-none" x-data="{ showMenu: false }">
+                        <div
+                            class="container relative flex flex-wrap items-center justify-between h-24 mx-auto overflow-hidden font-medium border-b border-gray-200 md:overflow-visible lg:justify-center sm:px-4 md:px-2 lg:px-0">
+                            <div class="flex items-center justify-start w-1/4 h-full pr-4">
+                                <a href="#_" class="flex items-center py-4 space-x-2 font-extrabold text-gray-900 md:py-0">
+                                    <svg class="w-auto h-5 -translate-y-px" viewBox="0 0 69 66" fill="none"
+                                        xmlns="http://www.w3.org/2000/svg">
+                                        <!-- <path
+                                    d="m31.2 12.2-3.9 12.3-13.4.5-13.4.5 10.7 7.7L21.8 41l-3.9 12.1c-2.2 6.7-3.8 12.4-3.6 12.5.2.2 5-3 10.6-7.1 5.7-4.1 10.9-7.2 11.5-6.8.6.4 5.3 3.8 10.5 7.5 5.2 3.8 9.6 6.6 9.8 6.4.2-.2-1.4-5.8-3.6-12.5l-3.9-12.2 8.5-6.2c14.7-10.6 14.8-9.6-.4-9.7H44.2L40 12.5C37.7 5.6 35.7 0 35.5 0c-.3 0-2.2 5.5-4.3 12.2Z"
+                                    fill="currentColor" /> -->
+                                    </svg>
+    
+                                    <div class="flex items-center justify-center col-span-1 md:col-span-3 lg:col-span-1">
+                                        <svg class="h-5 mt-1 text-gray-500 fill-current" xmlns="http://www.w3.org/2000/svg"
+                                            viewBox="0 0 278.7 36.3">
+                                            <g>
+                                                <path class="st0"
+                                                    d="M238.1 14.4v21.9h7V21.7h25.6v14.6h7V14.4h-39.6m6.2-7.1h27c3.8-.7 6.5-4.1 7.3-7.3H237c.8 3.2 3.6 6.5 7.3 7.3m-27.5 29c3.5-1.5 5.4-4.1 6.2-7.1h-31.5V.1h-7.1v36.2h32.4M131.9 7.2h25c3.8-1.1 6.9-4 7.7-7.1H125v21.4h32.4V29H132c-4 1.1-7.4 3.8-9.1 7.3h41.5V14.4H132l-.1-7.2m-61.6.1h27c3.8-.7 6.6-4.1 7.3-7.3H62.9c.8 3.2 3.6 6.5 7.4 7.3m0 14.3h27c3.8-.7 6.6-4.1 7.3-7.3H62.9c.8 3.2 3.6 6.5 7.4 7.3m0 14.7h27c3.8-.7 6.6-4.1 7.3-7.3H62.9c.8 3.2 3.6 6.6 7.4 7.3M0 .1c.8 3.2 3.6 6.4 7.3 7.2h11.4l.6.2v28.7h7.1V7.5l.6-.2h11.4c3.8-1 6.5-4 7.3-7.2V0L0 .1" />
+                                            </g>
+                                        </svg>
+                                    </div>
+                                    </span>
+                                </a>
+                            </div>
+                            <div class="top-0 left-0 items-start hidden w-full h-full p-4 text-sm bg-gray-900 bg-opacity-50 md:items-center md:w-3/4 md:absolute lg:text-base md:bg-transparent md:p-0 md:relative md:flex"
+                                :class="{'flex fixed': showMenu, 'hidden': !showMenu }">
+                                <div
+                                    class="flex-col w-full h-auto overflow-hidden bg-white rounded-lg md:bg-transparent md:overflow-visible md:rounded-none md:relative md:flex md:flex-row">
+                                    <a href="#_"
+                                        class="inline-flex items-center block w-auto h-16 px-6 text-xl font-black leading-none text-gray-900 md:hidden">
+                                        <svg class="w-auto h-5" viewBox="0 0 355 99" xmlns="http://www.w3.org/2000/svg"
+                                            xmlns:xlink="http://www.w3.org/1999/xlink">
+                                            <defs>
+                                                <path
+                                                    d="M119.1 87V66.4h19.8c34.3 0 34.2-49.5 0-49.5-11 0-22 .1-33 .1v70h13.2zm19.8-32.7h-19.8V29.5h19.8c16.8 0 16.9 24.8 0 24.8zm32.6-30.5c0 9.5 14.4 9.5 14.4 0s-14.4-9.5-14.4 0zM184.8 87V37.5h-12.2V87h12.2zm22.8 0V61.8c0-7.5 5.1-13.8 12.6-13.8 7.8 0 11.9 5.7 11.9 13.2V87h12.2V61.1c0-15.5-9.3-24.2-20.9-24.2-6.2 0-11.2 2.5-16.2 7.4l-.8-6.7h-10.9V87h12.1zm72.1 1.3c7.5 0 16-2.6 21.2-8l-7.8-7.7c-2.8 2.9-8.7 4.6-13.2 4.6-8.6 0-13.9-4.4-14.7-10.5h38.5c1.9-20.3-8.4-30.5-24.9-30.5-16 0-26.2 10.8-26.2 25.8 0 15.8 10.1 26.3 27.1 26.3zM292 56.6h-26.6c1.8-6.4 7.2-9.6 13.8-9.6 7 0 12 3.2 12.8 9.6zm41.2 32.1c14.1 0 21.2-7.5 21.2-16.2 0-13.1-11.8-15.2-21.1-15.8-6.3-.4-9.2-2.2-9.2-5.4 0-3.1 3.2-4.9 9-4.9 4.7 0 8.7 1.1 12.2 4.4l6.8-8c-5.7-5-11.5-6.5-19.2-6.5-9 0-20.8 4-20.8 15.4 0 11.2 11.1 14.6 20.4 15.3 7 .4 9.8 1.8 9.8 5.2 0 3.6-4.3 6-8.9 5.9-5.5-.1-13.5-3-17-6.9l-6 8.7c7.2 7.5 15 8.8 22.8 8.8z"
+                                                    id="a"></path>
+                                            </defs>
+                                            <g fill="none" fill-rule="evenodd">
+                                                <g fill="currentColor">
+                                                    <path d="M19.742 49h28.516L68 83H0l19.742-34z"></path>
+                                                    <path d="M26 69h14v30H26V69zM4 50L33.127 0 63 50H4z"></path>
+                                                </g>
+                                                <g fill-rule="nonzero">
+                                                    <use fill="currentColor" xlink:href="#a"></use>
+                                                    <use fill="currentColor" xlink:href="#a"></use>
+                                                </g>
+                                            </g>
+                                        </svg>
+                                    </a>
+                                    <div
+                                        class="flex flex-col items-start justify-center w-full space-x-6 text-center lg:space-x-8 md:w-2/3 md:mt-0 md:flex-row md:items-center">
+                                        <a href="#_"
+                                            class="inline-block w-full py-2 mx-0 ml-6 font-medium text-left text-black md:ml-0 md:w-auto md:px-0 md:mx-2 lg:mx-3 md:text-center">Home</a>
+                                        <a href="#_"
+                                            class="inline-block w-full py-2 mx-0 font-medium text-left text-gray-700 md:w-auto md:px-0 md:mx-2 hover:text-black lg:mx-3 md:text-center">Shop</a>
+                                        <a href="#_"
+                                            class="inline-block w-full py-2 mx-0 font-medium text-left text-gray-700 md:w-auto md:px-0 md:mx-2 hover:text-black lg:mx-3 md:text-center">Clothes</a>
+                                        <a href="#_"
+                                            class="inline-block w-full py-2 mx-0 font-medium text-left text-gray-700 md:w-auto md:px-0 md:mx-2 hover:text-black lg:mx-3 md:text-center">Shoes</a>
+                                    </div>
+                                    <div
+                                        class="flex flex-col items-start justify-end w-full pt-4 md:items-center md:w-1/3 md:flex-row md:py-0">
+                                        <a href="./login.html"
+                                            class="w-full px-6 py-2 mr-0 text-gray-700 md:px-3 md:mr-2 lg:mr-3 md:w-auto">Sign
+                                            In</a>
+                                        <a href="./logup.html"
+                                            class="w-full px-6 py-2 mr-0 text-gray-700 md:px-3 md:mr-2 lg:mr-3 md:w-auto">Sign
+                                            Up</a>
+                                        <a href="#_"
+                                            class="inline-flex items-center w-full px-5 px-6 py-3 text-sm font-medium leading-4 text-white bg-gray-900 md:w-auto md:rounded-full hover:bg-gray-800 focus:outline-none md:focus:ring-2 focus:ring-0 focus:ring-offset-2 focus:ring-gray-800">Cart</a>
+                                    </div>
+                                </div>
+                            </div>
+                            <div @click="showMenu = !showMenu"
+                                class="absolute right-0 flex flex-col items-center items-end justify-center w-10 h-10 bg-white rounded-full cursor-pointer md:hidden hover:bg-gray-100">
+                                <svg class="w-6 h-6 text-gray-700" x-show="!showMenu" fill="none" stroke-linecap="round"
+                                    stroke-linejoin="round" stroke-width="2" viewBox="0 0 24 24" stroke="currentColor">
+                                    <path d="M4 6h16M4 12h16M4 18h16"></path>
+                                </svg>
+                                <svg class="w-6 h-6 text-gray-700" x-show="showMenu" fill="none" stroke="currentColor"
+                                    viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg" style="display: none;">
+                                    <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2"
+                                        d="M6 18L18 6M6 6l12 12"></path>
+                                </svg>
+                            </div>
+                        </div>
+                    </nav>
+                </div>
+            </section>
+            <!-- End navbar -->
+        </div>
+        <!-- Hình ảnh và các mức giá  -->
+        <div class="main" style="display:flex;flex-direction: column;">
+            <div class="nabar-8" style="margin-bottom: 3rem;margin-left:5rem;">
+                <div class="nabar-main">
+                    <!--Third breadcrumb-->
+                    <nav class="w-full rounded-md">
+                        <ol class="list-reset flex">
+                            <li>
+                                <a href="#"
+                                    class="text-primary transition duration-150 ease-in-out hover:text-primary-600 focus:text-primary-600 active:text-primary-700 dark:text-primary-400 dark:hover:text-primary-500 dark:focus:text-primary-500 dark:active:text-primary-600">Home</a>
+                            </li>
+                            <li>
+                                <span class="mx-2 text-neutral-500 dark:text-neutral-400">/</span>
+                            </li>
+                            <li>
+                                <a href="#"
+                                    class="text-primary transition duration-150 ease-in-out hover:text-primary-600 focus:text-primary-600 active:text-primary-700 dark:text-primary-400 dark:hover:text-primary-500 dark:focus:text-primary-500 dark:active:text-primary-600">Library</a>
+                            </li>
+                            <li>
+                                <span class="mx-2 text-neutral-500 dark:text-neutral-400">/</span>
+                            </li>
+                            <li class="text-neutral-500 dark:text-neutral-400">Data</li>
+                        </ol>
+                    </nav>
+                </div>
+    
+            </div>
+            <div class="nabar-9" style="display:flex;">
+                <!-- các hình ảnh của áo  -->
+                <div class="nabar-3">
+    
+                    <div class="grid grid-cols-2 gap-2">
+                        <div>
+                            <img class="h-auto max-w-full rounded-lg"
+                                src="https://flowbite.s3.amazonaws.com/docs/gallery/square/image-1.jpg" alt="">
+                        </div>
+                        <div>
+                            <img class="h-auto max-w-full rounded-lg"
+                                src="https://flowbite.s3.amazonaws.com/docs/gallery/square/image-2.jpg" alt="">
+                        </div>
+                        <div>
+                            <img class="h-auto max-w-full rounded-lg"
+                                src="https://flowbite.s3.amazonaws.com/docs/gallery/square/image-3.jpg" alt="">
+                        </div>
+                        <div>
+                            <img class="h-auto max-w-full rounded-lg"
+                                src="https://flowbite.s3.amazonaws.com/docs/gallery/square/image-4.jpg" alt="">
+                        </div>
+                        <div>
+                            <img class="h-auto max-w-full rounded-lg"
+                                src="https://flowbite.s3.amazonaws.com/docs/gallery/square/image-1.jpg" alt="">
+                        </div>
+                        <div>
+                            <img class="h-auto max-w-full rounded-lg"
+                                src="https://flowbite.s3.amazonaws.com/docs/gallery/square/image-2.jpg" alt="">
+                        </div>
+                    </div>
+                    <div class="grid grid-cols-2 gap-2">
+                        <div>
+                            <img class="h-auto max-w-full rounded-lg"
+                                src="https://flowbite.s3.amazonaws.com/docs/gallery/square/image-1.jpg" alt="">
+                        </div>
+                        <div>
+                            <img class="h-auto max-w-full rounded-lg"
+                                src="https://flowbite.s3.amazonaws.com/docs/gallery/square/image-2.jpg" alt="">
+                        </div>
+                        <div>
+                            <img class="h-auto max-w-full rounded-lg"
+                                src="https://flowbite.s3.amazonaws.com/docs/gallery/square/image-3.jpg" alt="">
+                        </div>
+                        <div>
+                            <img class="h-auto max-w-full rounded-lg"
+                                src="https://flowbite.s3.amazonaws.com/docs/gallery/square/image-4.jpg" alt="">
+                        </div>
+                    </div>
+    
+                </div>
+                <!-- Hình ảnh di chuyển các mẫu  -->
+                <div class="nabar-4">
+                    <div id="carouselExampleCaptions" class="relative" data-te-carousel-init data-te-ride="carousel">
+                        <!--Carousel indicators-->
+                        <div class="absolute bottom-0 left-0 right-0 z-[2] mx-[15%] mb-4 flex list-none justify-center p-0"
+                            data-te-carousel-indicators>
+                            <button type="button" data-te-target="#carouselExampleCaptions" data-te-slide-to="0"
+                                data-te-carousel-active
+                                class="mx-[3px] box-content h-[3px] w-[30px] flex-initial cursor-pointer border-0 border-y-[10px] border-solid border-transparent bg-white bg-clip-padding p-0 -indent-[999px] opacity-50 transition-opacity duration-[600ms] ease-[cubic-bezier(0.25,0.1,0.25,1.0)] motion-reduce:transition-none"
+                                aria-current="true" aria-label="Slide 1"></button>
+                            <button type="button" data-te-target="#carouselExampleCaptions" data-te-slide-to="1"
+                                class="mx-[3px] box-content h-[3px] w-[30px] flex-initial cursor-pointer border-0 border-y-[10px] border-solid border-transparent bg-white bg-clip-padding p-0 -indent-[999px] opacity-50 transition-opacity duration-[600ms] ease-[cubic-bezier(0.25,0.1,0.25,1.0)] motion-reduce:transition-none"
+                                aria-label="Slide 2"></button>
+                            <button type="button" data-te-target="#carouselExampleCaptions" data-te-slide-to="2"
+                                class="mx-[3px] box-content h-[3px] w-[30px] flex-initial cursor-pointer border-0 border-y-[10px] border-solid border-transparent bg-white bg-clip-padding p-0 -indent-[999px] opacity-50 transition-opacity duration-[600ms] ease-[cubic-bezier(0.25,0.1,0.25,1.0)] motion-reduce:transition-none"
+                                aria-label="Slide 3"></button>
+                        </div>
+    
+                        <!--Carousel items-->
+                        <div class="relative w-full overflow-hidden after:clear-both after:block after:content-['']">
+                            <!--First item-->
+                            <div class="relative float-left -mr-[100%] w-full transition-transform duration-[600ms] ease-in-out motion-reduce:transition-none"
+                                data-te-carousel-active data-te-carousel-item style="backface-visibility: hidden">
+                                <img src="./fileanh.html/352273172_641396481366950_7232791556943441452_n.jpg"
+                                    class="block w-full" alt="..." />
+                                <div class="absolute inset-x-[15%] bottom-5 hidden py-5 text-center text-white md:block">
+                                </div>
+                            </div>
+                            <!--Second item-->
+                            <div class="relative float-left -mr-[100%] hidden w-full transition-transform duration-[600ms] ease-in-out motion-reduce:transition-none"
+                                data-te-carousel-item style="backface-visibility: hidden">
+                                <img src="./fileanh.html/355480119_649103357262929_3671433180353642833_n.jpg"
+                                    class="block w-full" alt="..." />
+                                <div class="absolute inset-x-[15%] bottom-5 hidden py-5 text-center text-white md:block">
+                                </div>
+                            </div>
+                            <!--Third item-->
+                            <div class="relative float-left -mr-[100%] hidden w-full transition-transform duration-[600ms] ease-in-out motion-reduce:transition-none"
+                                data-te-carousel-item style="backface-visibility: hidden">
+                                <img src="./fileanh.html/355890479_649666027206662_6210539469080713677_n.jpg"
+                                    class="block w-full" alt="..." />
+                                <div class="absolute inset-x-[15%] bottom-5 hidden py-5 text-center text-white md:block">
+                                </div>
+                            </div>
+                        </div>
+    
+                        <!--Carousel controls - prev item-->
+                        <button
+                            class="absolute bottom-0 left-0 top-0 z-[1] flex w-[15%] items-center justify-center border-0 bg-none p-0 text-center text-white opacity-50 transition-opacity duration-150 ease-[cubic-bezier(0.25,0.1,0.25,1.0)] hover:text-white hover:no-underline hover:opacity-90 hover:outline-none focus:text-white focus:no-underline focus:opacity-90 focus:outline-none motion-reduce:transition-none"
+                            type="button" data-te-target="#carouselExampleCaptions" data-te-slide="prev">
+                            <span class="inline-block h-8 w-8">
+                                <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke-width="1.5"
+                                    stroke="currentColor" class="h-6 w-6">
+                                    <path stroke-linecap="round" stroke-linejoin="round" d="M15.75 19.5L8.25 12l7.5-7.5" />
+                                </svg>
+                            </span>
+                            <span
+                                class="!absolute !-m-px !h-px !w-px !overflow-hidden !whitespace-nowrap !border-0 !p-0 ![clip:rect(0,0,0,0)]">Previous</span>
+                        </button>
+                        <!--Carousel controls - next item-->
+                        <button
+                            class="absolute bottom-0 right-0 top-0 z-[1] flex w-[15%] items-center justify-center border-0 bg-none p-0 text-center text-white opacity-50 transition-opacity duration-150 ease-[cubic-bezier(0.25,0.1,0.25,1.0)] hover:text-white hover:no-underline hover:opacity-90 hover:outline-none focus:text-white focus:no-underline focus:opacity-90 focus:outline-none motion-reduce:transition-none"
+                            type="button" data-te-target="#carouselExampleCaptions" data-te-slide="next">
+                            <span class="inline-block h-8 w-8">
+                                <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke-width="1.5"
+                                    stroke="currentColor" class="h-6 w-6">
+                                    <path stroke-linecap="round" stroke-linejoin="round" d="M8.25 4.5l7.5 7.5-7.5 7.5" />
+                                </svg>
+                            </span>
+                            <span
+                                class="!absolute !-m-px !h-px !w-px !overflow-hidden !whitespace-nowrap !border-0 !p-0 ![clip:rect(0,0,0,0)]">Next</span>
+                        </button>
+                    </div>
+                </div>
+                <!-- Bảng giơí thiệu sản phẩm  -->
+                <div class="nabar-5">
+                    <div id="narbar-6">
+    
+                        <!-- tên  -->
+                        <h1 class="cost"> Áo Họa Tiết Hoa Cổ Tròn </h1>
+                        <!-- giá thành và đánh giá  -->
+                        <div id="cost-2">
+                            <h1 class="cost-1">480.000VND</h1>
+                            <div>
+                                <i class="fa fa-2x fa-star"></i>
+                                <i class="fa fa-2x fa-star"></i>
+                                <i class="fa fa-2x fa-star"></i>
+                                <i class="fa fa-2x fa-star"></i>
+                                <i class="fa fa-2x fa-star-half-o"></i>
+                                <!-- <span id="star"></span>
+                                    <span id="star"></span>
+                                    <span id="star"></span>
+                                    <span id="star"></span>
+                                    <span id="star"></span> -->
+                            </div>
+                        </div id="cost-3">
+                        <!-- miêu tả sản phẩm  -->
+                        <p> Chất vải mềm mải , thoải mái với chất liệu cotton tự nhiên . Thoàỉ mái khoe dáng </p>
+                        <!-- border viền ở dưới  -->
+                        <p>_______________________________________________________________________</p>
+                        <!-- Bảng màu   -->
+                        <div class="square" style="display:flex; flex-direction: column;">
+                            <h2 id="phongchu"> Màu sắc :5 màu </h2>
+                            <div style="display:flex; justify-content: space-around;margin-bottom: 0.5rem;">
+                                <div id="choose-color" style="background:#281919,color:
+                                    #1b1b1b"></div>
+                                <div id="choose-color" style="background:pink "></div>
+                                <div id="choose-color" style="background:yellow"></div>
+                                <div id="choose-color" style="background:green"></div>
+                                <div id="choose-color" style="background:red"></div>
+    
+                            </div>
+                        </div>
+                        <!-- Kích cỡ  -->
+                        <div style="display:flex; flex-direction: column; margin-top:20px; gap:20px;">
+                            <h2 id="phongchu"> Kích Cỡ </h2>
+                            <div style="display:flex; justify-content: space-around; width:20rem;gap:2rem;">
+                                <a href="#" id="kichco">
+                                    <h2> S</h2>
+                                </a>
+                                <a href="#" id="kichco">
+                                    <h2>M</h2>
+                                </a>
+                                <a href="#" id="kichco">
+                                    <h2>XL</h2>
+                                </a>
+                                <a href="#" id="kichco">
+                                    <h2>XXL</h2>
+                                </a>
+    
+                            </div>
+                        </div>
+                        <!-- đặt vào giỏi hàng  -->
+                        <span id="buy">Thêm vào giỏi hàng </span>
+                        <!-- số lượng đã tiêu thụ  -->
+                        <div style="display: flex;justify-content: end;">
+                            <h2><strong> ĐÃ BÁN 100/400c</strong></h2>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+    <script src="https://use.fontawesome.com/452826394c.js"></script>
+</body>
+</html>

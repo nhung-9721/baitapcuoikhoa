@@ -1,0 +1,157 @@
+.grid.grid-cols-2.gap-2 {
+    width: 15rem;
+}
+.main{
+    display:flex;
+    justify-content: space-around;
+}
+.cost {
+    /* margin-top:5rem; */
+    font-family: inherit;
+    color:#1b1b1b;
+    font-size:45px;
+    font-weight:700;
+    letter-spacing:0.45px;
+    line-height:45px;
+}
+.cost-1{
+    color: darkgray;
+    font-size: 3rem;
+    margin-bottom: 2rem;
+    color:#1b1b1b;
+    font-size:32px;
+    font-weight:700;
+    letter-spacing:0.34px;
+    line-height:37.824px;
+}
+/* .nabar-5 p {
+    font-size: large;
+    margin: 20px 20px 20px 20px;
+    font-family: initial;
+} */
+.square {
+    display: flex;
+    /* flex-direction: column; */
+    justify-content: space-between;
+    gap:40px;
+    margin-top: 20px;
+}
+#choose-color{
+    box-shadow: #ffffff 0px 0px 0px 2px, ;
+    font-family: Arial;
+    font-size: 11px;
+    letter-spacing: 0.16px;
+    line-height: 13.2px;
+}
+div#choose-color {
+    width: 3.5rem;
+    height: 3.5rem;
+    align-items:center;
+    background-color:#281919;
+    box-shadow:#ffffff 0px 0px 0px 2px;
+    color:#1b1b1b;
+    font-family:Arial;
+    font-size:11px;
+    justify-content:center;
+    letter-spacing:0.16px;
+    line-height:13.2px;
+}
+.nabar-4 {
+    width: 40rem;
+    padding: 20px 0px 20px 0px;
+    display: flex;
+    justify-content: center;
+}
+img.block.w-full {
+    width:24.5rem;
+    /* margin-top: 4rem; */
+    color:#1b1b1b;
+    letter-spacing:0.16px;
+    line-height:19.2px;
+    text-align:left;
+}
+/* .nabar-5 {
+    margin-right: 9rem;
+    margin-left: 9rem;
+} */
+.nabar-5 {
+    padding: 0px 60px 0px 0p;
+    display: flex;
+    justify-content: center;
+    width: 60rem;
+}
+a#kichco {
+    border: solid 1px black;
+    width: 5rem;
+    height:3rem;
+    display: flex;
+    justify-content: center;
+    align-items:center;
+    color:#1b1b1b;
+    font-family:Arial;
+    font-size:11px;
+    letter-spacing:0.16px;
+    line-height:13.2px;
+}
+.nabar-3 {
+    display: flex;
+    flex-direction: column;
+    margin: 10px 20px 20px 5rem ;
+}
+.img.h-auto.max-w-full.rounded-lg {
+    width: 6rem;
+}
+.grid.grid-cols-2.gap-2 {
+    margin-bottom: 1rem;
+}
+#cost-2{
+    color:#1b1b1b;
+    display:flex;
+    flex-wrap:wrap;
+    justify-content:space-between;
+    letter-spacing:0.16px;
+    line-height:19.2px;
+}
+#cost-3{
+    color:#1b1b1b;
+    letter-spacing:0.16px;
+    line-height:19.2px;
+    margin:0px 0px 20px;
+    padding:0px 0px 20px;
+}
+#buy{
+    align-items:center;
+    background-color:#ffffff;
+    color:#1b1b1b;
+    display:flex;
+    font-weight:700;
+    justify-content:center;
+    letter-spacing:0.16px;
+    line-height:25px;
+    padding:8px 4px;
+    text-align:center;
+    text-transform:uppercase;
+    border: solid 3px black;
+    margin: 40px 0px 20px 0px;
+}
+#star{
+    background-position:-60px 0px;
+    background-size:75px 15px;
+    color:#1b1b1b;
+    display:inline-block;
+    line-height:17.31px;
+    text-align:left;
+    background-image: url("https://asset.uniqlo.com/g/icons/review_star.svg");
+}
+div#narbar-6 {
+    width: 30.5rem;
+}
+#phongchu{
+    color:#1b1b1b;
+    font-size:14px;
+    font-weight:700;
+    letter-spacing:0.28px;
+    line-height:14px;
+    text-transform:uppercase;
+}
+
