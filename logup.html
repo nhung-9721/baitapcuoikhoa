@@ -1,0 +1,71 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="./logup.css">
+</head>
+<body>
+    <!-- <div id="header-form"> -->
+        <!-- <form id="register-form">
+            <input type="text" id="username" placeholder="Username" />
+            <input type="password" id="password" placeholder="Password"/>
+            <input type="password" id="confirm-password" placeholder="confirm-password"/>
+            <button type="submit">Đăng ký</button>
+        </form>
+        <a href="./login.html">Đăng nhập </a> -->
+        
+
+         <div class="header-form">
+             <div id="loginDiv">
+                 <form action="">
+                     <h1 id="font-warrp">REGESTER</h1>
+                      <p>User Name:<input id="userNname" type="text" autofocus required><label id="name_trip"></label></p>
+                
+                      <p>Password:<input id="password" type="password" required><label id="password_trip"></label></p>
+                
+                      <p>Enter Again:<input id="surePassword" type="password" required><label id="surePassword_trip"></label></p>
+                
+                      <p>
+                        User Type
+                        <select name="type" id="userType">
+                          <option value="0">Please Select</option>
+                          <option value="1">Normal</option>
+                          <option value="2">VIP</option>
+                        </select>
+                        <label id="type_trip"></label>
+                      </p>
+                      <div class="sexDiv">
+                        Gender
+                        <input class="userSex" name="sex" value="male" type="radio">Male
+                        <input class="userSex" name="sex" value="female" type="radio">Female
+                        <label id="sex_trip"></label>
+                      </div>
+                
+                      <p>
+                        Birthdate
+                        <input id="birthday" type="date">
+                        <label id="birthday_trip"></label>
+                      </p>
+                      <p> Email:
+                        <input id="email" type="email" required> <label id="emil_trip"></label>
+                      </p>
+                
+                      <p> Introduction:</p>
+                      <div class="introduce">
+                        <textarea name="introduce" cols="30" id="introduceText" required rows="10"></textarea>
+                        <label id="introduce_trip"></label>
+                      </div>
+                
+                      <p style="text-align: center;">
+                        <input type="submit" class="button" onblur="checkForm()" onclick="return submitT()" value="Submit">
+                        <input type="reset" class="button" value="Reset">
+                      </p>
+                 </form>
+               </div>
+         </div>
+         </div>
+    <script src="./logup.js"></script>
+</body>
+</html>
