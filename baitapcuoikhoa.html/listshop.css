@@ -1,0 +1,11 @@
+#thongtin {
+    color: #1b1b1b;
+    flex-basis:  0%;
+    letter-spacing:0.16px;
+    line-height:19.2px;
+    padding:0px 0px 0px 20px;
+    text-align:left;
+}
+ol.list-reset.flex {
+    margin-left: 3rem;
+}

@@ -4,8 +4,212 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Document</title>
+    <style>[x-cloak]{display:none}</style>
+    <!-- Include the Alpine library on your page -->
+    <script src="https://unpkg.com/alpinejs" defer></script>
+    <!-- Include the TailwindCSS library on your page -->
+    <script src="https://cdn.tailwindcss.com"></script>
+    <link rel="stylesheet" href="./listshop.css">
 </head>
 <body>
+    <!-- Nabar  -->
+    <section class="w-full px-6 antialiased bg-white">
+        <div class="mx-auto max-w-7xl">
+          <nav class="relative z-50 h-24 select-none" x-data="{ showMenu: false }">
+            <div
+              class="container relative flex flex-wrap items-center justify-between h-24 mx-auto overflow-hidden font-medium border-b border-gray-200 md:overflow-visible lg:justify-center sm:px-4 md:px-2 lg:px-0">
+              <div class="flex items-center justify-start w-1/4 h-full pr-4">
+                <a href="#_" class="flex items-center py-4 space-x-2 font-extrabold text-gray-900 md:py-0">
+                    <svg class="w-auto h-5 -translate-y-px" viewBox="0 0 69 66" fill="none"
+                      xmlns="http://www.w3.org/2000/svg">
+                      <!-- <path
+                        d="m31.2 12.2-3.9 12.3-13.4.5-13.4.5 10.7 7.7L21.8 41l-3.9 12.1c-2.2 6.7-3.8 12.4-3.6 12.5.2.2 5-3 10.6-7.1 5.7-4.1 10.9-7.2 11.5-6.8.6.4 5.3 3.8 10.5 7.5 5.2 3.8 9.6 6.6 9.8 6.4.2-.2-1.4-5.8-3.6-12.5l-3.9-12.2 8.5-6.2c14.7-10.6 14.8-9.6-.4-9.7H44.2L40 12.5C37.7 5.6 35.7 0 35.5 0c-.3 0-2.2 5.5-4.3 12.2Z"
+                        fill="currentColor" /> -->
+                    </svg>
     
+                    <div class="flex items-center justify-center col-span-1 md:col-span-3 lg:col-span-1">
+                      <svg class="h-5 mt-1 text-gray-500 fill-current" xmlns="http://www.w3.org/2000/svg"
+                        viewBox="0 0 278.7 36.3">
+                        <g>
+                          <path class="st0"
+                            d="M238.1 14.4v21.9h7V21.7h25.6v14.6h7V14.4h-39.6m6.2-7.1h27c3.8-.7 6.5-4.1 7.3-7.3H237c.8 3.2 3.6 6.5 7.3 7.3m-27.5 29c3.5-1.5 5.4-4.1 6.2-7.1h-31.5V.1h-7.1v36.2h32.4M131.9 7.2h25c3.8-1.1 6.9-4 7.7-7.1H125v21.4h32.4V29H132c-4 1.1-7.4 3.8-9.1 7.3h41.5V14.4H132l-.1-7.2m-61.6.1h27c3.8-.7 6.6-4.1 7.3-7.3H62.9c.8 3.2 3.6 6.5 7.4 7.3m0 14.3h27c3.8-.7 6.6-4.1 7.3-7.3H62.9c.8 3.2 3.6 6.5 7.4 7.3m0 14.7h27c3.8-.7 6.6-4.1 7.3-7.3H62.9c.8 3.2 3.6 6.6 7.4 7.3M0 .1c.8 3.2 3.6 6.4 7.3 7.2h11.4l.6.2v28.7h7.1V7.5l.6-.2h11.4c3.8-1 6.5-4 7.3-7.2V0L0 .1" />
+                        </g>
+                      </svg>
+                    </div>
+                  </span>
+                </a>
+              </div>
+              <div
+                class="top-0 left-0 items-start hidden w-full h-full p-4 text-sm bg-gray-900 bg-opacity-50 md:items-center md:w-3/4 md:absolute lg:text-base md:bg-transparent md:p-0 md:relative md:flex"
+                :class="{'flex fixed': showMenu, 'hidden': !showMenu }">
+                <div
+                  class="flex-col w-full h-auto overflow-hidden bg-white rounded-lg md:bg-transparent md:overflow-visible md:rounded-none md:relative md:flex md:flex-row">
+                  <a href="#_"
+                    class="inline-flex items-center block w-auto h-16 px-6 text-xl font-black leading-none text-gray-900 md:hidden">
+                    <svg class="w-auto h-5" viewBox="0 0 355 99" xmlns="http://www.w3.org/2000/svg"
+                      xmlns:xlink="http://www.w3.org/1999/xlink">
+                      <defs>
+                        <path
+                          d="M119.1 87V66.4h19.8c34.3 0 34.2-49.5 0-49.5-11 0-22 .1-33 .1v70h13.2zm19.8-32.7h-19.8V29.5h19.8c16.8 0 16.9 24.8 0 24.8zm32.6-30.5c0 9.5 14.4 9.5 14.4 0s-14.4-9.5-14.4 0zM184.8 87V37.5h-12.2V87h12.2zm22.8 0V61.8c0-7.5 5.1-13.8 12.6-13.8 7.8 0 11.9 5.7 11.9 13.2V87h12.2V61.1c0-15.5-9.3-24.2-20.9-24.2-6.2 0-11.2 2.5-16.2 7.4l-.8-6.7h-10.9V87h12.1zm72.1 1.3c7.5 0 16-2.6 21.2-8l-7.8-7.7c-2.8 2.9-8.7 4.6-13.2 4.6-8.6 0-13.9-4.4-14.7-10.5h38.5c1.9-20.3-8.4-30.5-24.9-30.5-16 0-26.2 10.8-26.2 25.8 0 15.8 10.1 26.3 27.1 26.3zM292 56.6h-26.6c1.8-6.4 7.2-9.6 13.8-9.6 7 0 12 3.2 12.8 9.6zm41.2 32.1c14.1 0 21.2-7.5 21.2-16.2 0-13.1-11.8-15.2-21.1-15.8-6.3-.4-9.2-2.2-9.2-5.4 0-3.1 3.2-4.9 9-4.9 4.7 0 8.7 1.1 12.2 4.4l6.8-8c-5.7-5-11.5-6.5-19.2-6.5-9 0-20.8 4-20.8 15.4 0 11.2 11.1 14.6 20.4 15.3 7 .4 9.8 1.8 9.8 5.2 0 3.6-4.3 6-8.9 5.9-5.5-.1-13.5-3-17-6.9l-6 8.7c7.2 7.5 15 8.8 22.8 8.8z"
+                          id="a"></path>
+                      </defs>
+                      <g fill="none" fill-rule="evenodd">
+                        <g fill="currentColor">
+                          <path d="M19.742 49h28.516L68 83H0l19.742-34z"></path>
+                          <path d="M26 69h14v30H26V69zM4 50L33.127 0 63 50H4z"></path>
+                        </g>
+                        <g fill-rule="nonzero">
+                          <use fill="currentColor" xlink:href="#a"></use>
+                          <use fill="currentColor" xlink:href="#a"></use>
+                        </g>
+                      </g>
+                    </svg>
+                  </a>
+                  <div
+                    class="flex flex-col items-start justify-center w-full space-x-6 text-center lg:space-x-8 md:w-2/3 md:mt-0 md:flex-row md:items-center">
+                    <a href="#_"
+                      class="inline-block w-full py-2 mx-0 ml-6 font-medium text-left text-black md:ml-0 md:w-auto md:px-0 md:mx-2 lg:mx-3 md:text-center">Home</a>
+                    <a href="#_"
+                      class="inline-block w-full py-2 mx-0 font-medium text-left text-gray-700 md:w-auto md:px-0 md:mx-2 hover:text-black lg:mx-3 md:text-center">Shop</a>
+                    <a href="#_"
+                      class="inline-block w-full py-2 mx-0 font-medium text-left text-gray-700 md:w-auto md:px-0 md:mx-2 hover:text-black lg:mx-3 md:text-center">Clothes</a>
+                    <a href="#_"
+                      class="inline-block w-full py-2 mx-0 font-medium text-left text-gray-700 md:w-auto md:px-0 md:mx-2 hover:text-black lg:mx-3 md:text-center">Shoes</a>
+                  </div>
+                  <div
+                    class="flex flex-col items-start justify-end w-full pt-4 md:items-center md:w-1/3 md:flex-row md:py-0">
+                    <a href="./login.html"
+                      class="w-full px-6 py-2 mr-0 text-gray-700 md:px-3 md:mr-2 lg:mr-3 md:w-auto">Sign In</a>
+                    <a href="./logup.html"
+                      class="w-full px-6 py-2 mr-0 text-gray-700 md:px-3 md:mr-2 lg:mr-3 md:w-auto">Sign Up</a>
+                    <a href="#_"
+                      class="inline-flex items-center w-full px-5 px-6 py-3 text-sm font-medium leading-4 text-white bg-gray-900 md:w-auto md:rounded-full hover:bg-gray-800 focus:outline-none md:focus:ring-2 focus:ring-0 focus:ring-offset-2 focus:ring-gray-800">Cart</a>
+                  </div>
+                </div>
+              </div>
+              <div @click="showMenu = !showMenu"
+                class="absolute right-0 flex flex-col items-center items-end justify-center w-10 h-10 bg-white rounded-full cursor-pointer md:hidden hover:bg-gray-100">
+                <svg class="w-6 h-6 text-gray-700" x-show="!showMenu" fill="none" stroke-linecap="round"
+                  stroke-linejoin="round" stroke-width="2" viewBox="0 0 24 24" stroke="currentColor">
+                  <path d="M4 6h16M4 12h16M4 18h16"></path>
+                </svg>
+                <svg class="w-6 h-6 text-gray-700" x-show="showMenu" fill="none" stroke="currentColor" viewBox="0 0 24 24"
+                  xmlns="http://www.w3.org/2000/svg" style="display: none;">
+                  <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M6 18L18 6M6 6l12 12"></path>
+                </svg>
+              </div>
+            </div>
+          </nav>
+        </div>
+      </section>
+    <!-- Thanh liên kết  -->
+    <div class="nabar-main">
+        <!--Third breadcrumb-->
+        <nav class="w-full rounded-md">
+            <ol class="list-reset flex">
+                <li>
+                    <a href="#"
+                        class="text-primary transition duration-150 ease-in-out hover:text-primary-600 focus:text-primary-600 active:text-primary-700 dark:text-primary-400 dark:hover:text-primary-500 dark:focus:text-primary-500 dark:active:text-primary-600">Home</a>
+                </li>
+                <li>
+                    <span class="mx-2 text-neutral-500 dark:text-neutral-400">/</span>
+                </li>
+                <li>
+                    <a href="#"
+                        class="text-primary transition duration-150 ease-in-out hover:text-primary-600 focus:text-primary-600 active:text-primary-700 dark:text-primary-400 dark:hover:text-primary-500 dark:focus:text-primary-500 dark:active:text-primary-600">Library</a>
+                </li>
+                <li>
+                    <span class="mx-2 text-neutral-500 dark:text-neutral-400">/</span>
+                </li>
+                <li class="text-neutral-500 dark:text-neutral-400">Data</li>
+            </ol>
+        </nav>
+    </div>
+    <!-- Phần thân  -->
+     <div  style="display :flex;justify-content:space-around; margin-top:30px;" >
+        <!-- Thông tin sản phẩm  -->
+        <div style="display :flex;justify-content:space-between; border: solid 0.1px black;padding: 30px 30px 30px 30px;">
+            <!-- hình ảnh  -->
+                <img src="./fileanh.html/352273172_641396481366950_7232791556943441452_n.jpg" alt="" style="width:15rem;">
+            <!-- thông tin sản phẩm  -->
+            <div style=" margin: 30px 30px 30px 60px ;">
+                <!-- thông tin  -->
+                <div id="thongtin "> 
+                    <h2 style="font-size:40px;font-weight:700;letter-spacing:0.45px;line-height:45px;font-family: inherit;color:#1b1b1b;"> Áo hoạ tiết </h2>
+                    <p style="color:#1b1b1b;letter-spacing:0.16px;line-height:19.2px;margin:8px 0px;text-align:left;"> Mã sản phẩm :574930</p>
+                    <h2 style="color:#1b1b1b;font-family:Arial;letter-spacing:0.16px;line-height:19.2px;text-align:left">Màu sắc : 34 Brown</h2>
+                    <h2  style="color:#1b1b1b;font-family:Arial;letter-spacing:0.16px;line-height:19.2px;text-align:left"> Kích cỡ : Nữ S </h2>
+                    <h2 style="color:#1b1b1b;letter-spacing:0.16px;line-height:19.2px;margin:8px 0px;text-align:left;"> Số tiền : 480.000 VND</h2>
+                </div>
+                <!-- số lượng và tổng số tiền  -->
+                <div>
+                
+                    <label for="countries" class="block mb-2 text-sm font-medium text-gray-900 text-white">Select an option</label>
+                    <select id="SOLUONG"
+                        class="bg-gray-50 border border-gray-300 text-gray-900 text-sm  focus:ring-blue-500 focus:border-blue-500 block w-full p-2.5bg-gray-700 dark:border-gray-600 dark:placeholder-gray-400  dark:focus:ring-blue-500 dark:focus:border-blue-500">
+                        <option selected>Số Lượng </option>
+                        <option value="">1</option>
+                        <option value="">2</option>
+                        <option value="">3</option>
+                        <option value="">...</option>
+                    </select>
+                    <h2> Tổng số tiền :480.000 VND</h2>
+                </div>
+            </div>
+ 
+        </div>
+        <!-- đơn thanh toán   -->
+        <div>
+            <!-- hóa đơn  -->
+            <div style="border: solid 0.1px black ; padding: 30px 30px 30px 30px ;padding: 20px;">
+                <h1 style="font-size:40px;font-weight:700;letter-spacing:0.45px;line-height:45px;font-family: inherit;color:#1b1b1b;"> TỔNG ĐƠN HÀNG| 1 SẢN PHẨM </h1>
+                <tr>
+                    <p><i>Tổng cộng </i></p>
+                    <p style="display: flex; justify-content: flex-end;"> 480.000VND</p>
+                </tr>
+                <tr>
+                   <h2>
+                    <i>TỔNG </i></h2>
+                   <h2 style="display: flex; justify-content: flex-end;"> 480.000 VND</h2>                    
+                </tr>
+                <tr>
+                    <h2><i>Tiền ship</i></h2>
+                    <h2 style="display: flex; justify-content: flex-end;"> 20.000VND</h2>
+                </tr>
+                <tr>
+                    <h1 style="font-size:40px;font-weight:700;letter-spacing:0.45px;line-height:45px;font-family: inherit;color:#1b1b1b;">TỔNG ĐƠN ĐẶT HÀNG </h1>
+                    <h2 style="display: flex; justify-content: flex-end;" > 480.000 VND</h2>
+                </tr>
+            </div>
+            <!-- phiếu giảm giá  -->
+            <div style="border: solid 0.1px black ;margin-top:15px;padding: 10px; ">
+                <select id="SOLUONG"
+                    class="bg-gray-50 border-gray-300 text-gray-900 focus:ring-blue-500 focus:border-blue-500 block w-full p-2.5bg-gray-700 dark:border-gray-600 dark:placeholder-gray-400  dark:focus:ring-blue-500 dark:focus:border-blue-500">
+                    <option selected>Giảm giá  </option>
+                    <option value="">20%</option>
+                    <option value="">30%</option>
+                    <option value="">40%</option>
+                    <option value="">5%</option>
+                </select>
+            
+            </div>
+           <!-- quà tùy chọn (miễn phí giao hàng )  -->
+             <div style="border: solid 0.1px black ;margin-top:15px;padding: 10px; ">
+                <select id="SOLUONG"
+                    class="bg-gray-50 border-gray-300 text-gray-900 focus:ring-blue-500 focus:border-blue-500 block w-full p-2.5bg-gray-700 dark:border-gray-600 dark:placeholder-gray-400  dark:focus:ring-blue-500 dark:focus:border-blue-500">
+                    <option selected>Dịch vụ gói quà  </option>
+                    <option value="">Thắt nơ & gói quà </option>
+                    <option value="">Thiệp & nơ,gói quà </option>
+                    <option value=""> Gói quà </option>
+                </select>
+             </div>
+           <!-- nút thanh toán  -->
+           <div></div>
+           <!-- nút quay trở về trang home -->
+        </div>
+        <div>
+          <span class="fa-stack fa-lg"><i class="fa fa-circle fa-stack-2x"></i><i class="fa fa-heart-o fa-stack-1x fa-inverse"></i></span>
+        </div>
+     </div>
 </body>
 </html>

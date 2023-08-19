@@ -1,20 +1,22 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Document</title>
-    <link rel="stylesheet" href="./logup.css">
-    <style>
-      [x-cloak] {
-        display: none
-      }
-    </style>
-    <!-- Include the Alpine library on your page -->
-    <script src="https://unpkg.com/alpinejs" defer></script>
-    <!-- Include the TailwindCSS library on your page -->
-    <script src="https://cdn.tailwindcss.com"></script>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Document</title>
+  <link rel="stylesheet" href="./logup.css">
+  <style>
+    [x-cloak] {
+      display: none
+    }
+  </style>
+  <!-- Include the Alpine library on your page -->
+  <script src="https://unpkg.com/alpinejs" defer></script>
+  <!-- Include the TailwindCSS library on your page -->
+  <script src="https://cdn.tailwindcss.com"></script>
 </head>
+
 <body>
   <div class="nabar">
     <div class="nabar-1">
@@ -108,49 +110,61 @@
         </div>
       </section>
     </div>
-        <div class="flex justify-center items-center w-full gap-16 " style="margin: 80px 0px 80px 0px">
-          <div class="nabar-3">
-            <svg class="h-20 mt-1 text-gray-500 fill-current" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 278.7 36.3">
-              <g>
-                <path class="st0"
-                  d="M238.1 14.4v21.9h7V21.7h25.6v14.6h7V14.4h-39.6m6.2-7.1h27c3.8-.7 6.5-4.1 7.3-7.3H237c.8 3.2 3.6 6.5 7.3 7.3m-27.5 29c3.5-1.5 5.4-4.1 6.2-7.1h-31.5V.1h-7.1v36.2h32.4M131.9 7.2h25c3.8-1.1 6.9-4 7.7-7.1H125v21.4h32.4V29H132c-4 1.1-7.4 3.8-9.1 7.3h41.5V14.4H132l-.1-7.2m-61.6.1h27c3.8-.7 6.6-4.1 7.3-7.3H62.9c.8 3.2 3.6 6.5 7.4 7.3m0 14.3h27c3.8-.7 6.6-4.1 7.3-7.3H62.9c.8 3.2 3.6 6.5 7.4 7.3m0 14.7h27c3.8-.7 6.6-4.1 7.3-7.3H62.9c.8 3.2 3.6 6.6 7.4 7.3M0 .1c.8 3.2 3.6 6.4 7.3 7.2h11.4l.6.2v28.7h7.1V7.5l.6-.2h11.4c3.8-1 6.5-4 7.3-7.2V0L0 .1">
-                </path>
-              </g>
-            </svg>
-          </div>
-          <div class=""  style="box-shadow:  0px 0px 0px 0px;">
-            <div id="loginDiv">
-              <form action="">
-                <h1 id="font-warrp">Sign up </h1>
-                <p>User Name:<input id="userNname" type="text" autofocus required style="border: solid 2px black;"class="bg-gray-50 border border-gray-300 text-gray-900 text-sm rounded-lg focus:ring-blue-500 focus:border-blue-500 block w-full p-2.5"><label></label></p>
-    
-                <p>Password:<input id="password" type="password" required style="border: solid 2px black"class="bg-gray-50 border border-gray-300 text-gray-900 text-sm rounded-lg focus:ring-blue-500 focus:border-blue-500 block w-full p-2.5"><label></label></p>
-    
-                <p>Enter Again:<input id="surePassword" type="password" required style="border: solid 2px black" class="bg-gray-50 border border-gray-300 text-gray-900 text-sm rounded-lg focus:ring-blue-500 focus:border-blue-500 block w-full p-2.5"><label</label></p>
-                <div class="sexDiv">
-                  Gender
-                  <input class="userSex" name="sex" value="male" type="radio" style="border: solid 2px black"class="bg-gray-50 border border-gray-300 text-gray-900 text-sm rounded-lg focus:ring-blue-500 focus:border-blue-500 block w-full p-2.5">Male
-                  <input class="userSex" name="sex" value="female" type="radio" style="border: solid 2px black;" class="bg-gray-50 border border-gray-300 text-gray-900 text-sm rounded-lg focus:ring-blue-500 focus:border-blue-500 block w-full p-2.5">Female
-                  <label id="sex_trip"></label>
-                </div>
-                <p> Email:
-                  <input id="email" type="email" required style="border: solid 2px black;"class="bg-gray-50 border border-gray-300 text-gray-900 text-sm rounded-lg focus:ring-blue-500 focus:border-blue-500 block w-full p-2.5"> <label id="emil_trip"></label>
-                </p>
-                <p style="text-align: center; display: flex; flex-direction: column;">
-                  <!-- <button type="submit" class="button" onblur="checkForm()" onclick="return submitT()" value="Submit" class="text-blue bg-gray-700 hover:bg-gray-800 focus:ring-4 focus:outline-none focus:ring-blue-300 font-medium rounded-lg text-sm w-full sm:w-auto px-5 py-2.5 text-center"></button>
-                  <button type="reset" class="button" value="Reset" class="text-white bg-gray-700 hover:bg-blue-800 focus:ring-4 focus:outline-none focus:ring-blue-300 font-medium rounded-lg text-sm w-full sm:w-auto px-5 py-2.5 text-center" ></button> -->
-                  <button type="submit" class="button" onblur="checkForm()" onclick="return submitT()" value="Submit"class="text-white bg-gray-700 hover:bg-gray-800 focus:ring-4 focus:outline-none focus:ring-blue-300 font-medium rounded-lg text-sm w-full sm:w-auto px-5 py-2.5 text-center">Submit</button>
-                  <button type="reset" class="button" value="Reset" class="text-white bg-gray-700 hover:bg-gray-800 focus:ring-4 focus:outline-none focus:ring-blue-300 font-medium rounded-lg text-sm w-full sm:w-auto px-5 py-2.5 text-center">Reset</button>
-              </form>
+    <div class="flex justify-center items-center w-full gap-16 " style="margin: 80px 0px 80px 0px">
+      <div class="nabar-3">
+        <svg class="h-20 mt-1 text-gray-500 fill-current" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 278.7 36.3">
+          <g>
+            <path class="st0"
+              d="M238.1 14.4v21.9h7V21.7h25.6v14.6h7V14.4h-39.6m6.2-7.1h27c3.8-.7 6.5-4.1 7.3-7.3H237c.8 3.2 3.6 6.5 7.3 7.3m-27.5 29c3.5-1.5 5.4-4.1 6.2-7.1h-31.5V.1h-7.1v36.2h32.4M131.9 7.2h25c3.8-1.1 6.9-4 7.7-7.1H125v21.4h32.4V29H132c-4 1.1-7.4 3.8-9.1 7.3h41.5V14.4H132l-.1-7.2m-61.6.1h27c3.8-.7 6.6-4.1 7.3-7.3H62.9c.8 3.2 3.6 6.5 7.4 7.3m0 14.3h27c3.8-.7 6.6-4.1 7.3-7.3H62.9c.8 3.2 3.6 6.5 7.4 7.3m0 14.7h27c3.8-.7 6.6-4.1 7.3-7.3H62.9c.8 3.2 3.6 6.6 7.4 7.3M0 .1c.8 3.2 3.6 6.4 7.3 7.2h11.4l.6.2v28.7h7.1V7.5l.6-.2h11.4c3.8-1 6.5-4 7.3-7.2V0L0 .1">
+            </path>
+          </g>
+        </svg>
+      </div>
+      <div class="" style="box-shadow:  0px 0px 0px 0px;">
+        <div id="loginDiv">
+          <form action="" id="register-form">
+            <h1 id="font-warrp">Sign up </h1>
+            <p>User Name:<input id="username" type="text" autofocus required style="border: solid 2px black;"
+                class="bg-gray-50 border border-gray-300 text-gray-900 text-sm rounded-lg focus:ring-blue-500 focus:border-blue-500 block w-full p-2.5"><label></label>
+            </p>
+
+            <p>Password:<input id="password" type="password" required style="border: solid 2px black"
+                class="bg-gray-50 border border-gray-300 text-gray-900 text-sm rounded-lg focus:ring-blue-500 focus:border-blue-500 block w-full p-2.5"><label></label>
+            </p>
+
+            <p>Enter Again:<input id="confirm-password" type="password" required style="border: solid 2px black"
+                class="bg-gray-50 border border-gray-300 text-gray-900 text-sm rounded-lg focus:ring-blue-500 focus:border-blue-500 block w-full p-2.5">
+              <label></label>
+            </p>
+            <div class="sexDiv">
+              Gender
+              <input class="userSex" name="sex" value="male" type="radio" style="border: solid 2px black"
+                class="bg-gray-50 border border-gray-300 text-gray-900 text-sm rounded-lg focus:ring-blue-500 focus:border-blue-500 block w-full p-2.5">Male
+              <input class="userSex" name="sex" value="female" type="radio" style="border: solid 2px black;"
+                class="bg-gray-50 border border-gray-300 text-gray-900 text-sm rounded-lg focus:ring-blue-500 focus:border-blue-500 block w-full p-2.5">Female
+              <label id="sex_trip"></label>
             </div>
-          </div>
+            <p> Email:
+              <input id="email" type="email" required style="border: solid 2px black;"
+                class="bg-gray-50 border border-gray-300 text-gray-900 text-sm rounded-lg focus:ring-blue-500 focus:border-blue-500 block w-full p-2.5">
+              <label id="emil_trip"></label>
+            </p>
+            <p style="text-align: center; display: flex; flex-direction: column;">
+              <button type="submit" class="button" value="Submit"
+                class="text-white bg-gray-700 hover:bg-gray-800 focus:ring-4 focus:outline-none focus:ring-blue-300 font-medium rounded-lg text-sm w-full sm:w-auto px-5 py-2.5 text-center">Submit</button>
+              <button type="reset" class="button" value="Reset"
+                class="text-white bg-gray-700 hover:bg-gray-800 focus:ring-4 focus:outline-none focus:ring-blue-300 font-medium rounded-lg text-sm w-full sm:w-auto px-5 py-2.5 text-center">Reset</button>
+          </form>
         </div>
       </div>
     </div>
+  </div>
+  </div>
   </div>
 
   </div>
 
   <script src="./logup.js"></script>
 </body>
+
 </html>

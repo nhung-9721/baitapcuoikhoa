@@ -19,5 +19,6 @@ document.addEventListener("DOMContentLoaded", function () {
       // Lưu thông tin đăng ký vào Local Storage
       localStorage.setItem("username", username);
       localStorage.setItem("password", password);
+      window.location.href= "/baitapcuoikhoa.html/login.html"
     });
   });

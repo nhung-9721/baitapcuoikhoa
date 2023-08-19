@@ -7,12 +7,11 @@
 }
 .cost {
     /* margin-top:5rem; */
-    font-family: inherit;
-    color:#1b1b1b;
     font-size:45px;
     font-weight:700;
     letter-spacing:0.45px;
-    line-height:45px;
+    line-height:45px;font-family: inherit;
+    color:#1b1b1b;
 }
 .cost-1{
     color: darkgray;
